@@ -1,0 +1,8 @@
+# Conexion Eureka
+eureka: 
+   client: 
+      serviceUrl: 
+          defaultZone: http://localhost:2222/eureka
+# Conexion HTTP
+server:
+  port: 1111
