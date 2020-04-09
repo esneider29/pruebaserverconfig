@@ -5,4 +5,4 @@ eureka:
           defaultZone: http://localhost:2222/eureka
 # Conexion HTTP
 server:
-  port: 1112
+  port: 1114
