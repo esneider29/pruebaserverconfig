@@ -8,6 +8,19 @@ eureka:
 server:
   port: 1111
   
+#configuracion de ribbon para el servicio.catalogo 
+servicio.catalogo: 
+  ribbon: 
+    EnableZoneAffinity: true 
+    EnableZoneExclusive: false 
+    zoneAffinity: 
+    #minimo una instancia 
+      minAvailableServers: 1 
+    #la carga de las instancias 80%
+      maxLoadPerServer: 0.8 
+    #porcentaje de instancias no disponibles
+      maxBlackOutServesrPercentage: 0.6  
+    
 #security:
 #  oauth2:
 #    resource:
